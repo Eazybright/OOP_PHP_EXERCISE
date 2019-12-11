@@ -6,12 +6,12 @@ class Book
 
     public static function name()
     {
-        return "The author name is " . self::$name;
+        return "The author name is " . self::$name . "\n";
     }
 
     public static function getName()
     {
-        echo self::$name;
+        echo static::name();
     }
 }
 
@@ -22,7 +22,6 @@ class newBook extends Book
         return "The author names are Bolanle and " . self::$name . "\n";
     }
 }
-// $book = new newBook();
-// $book->getName();
 
-echo newBook::name();
+Book::getName();
+newBook::getName();

@@ -1,5 +1,6 @@
 <?php
 
+// include "autoload.php";
 include "geometryInterface.php";
 include "shapeInterface.php";
 
